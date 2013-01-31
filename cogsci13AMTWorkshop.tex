@@ -9,7 +9,7 @@
 \usepackage{todo}
 
 
-\title{Using Mechanical Turk and psiTurk for Dynamic Web Experiments}
+\title{Using Mechanical Turk and PsiTurk for Dynamic Web Experiments}
 
 \author{{\large \bf Anna Coenen (anna.coenen@nyu.edu)} \\
  {\large \bf Doug Markant (doug.markant@nyu.edu)} \\
@@ -29,7 +29,6 @@
 %todo
 %\end{abstract}
 
-
 \begin{quote}
 \small
 \textbf{Keywords:}
@@ -37,91 +36,145 @@ Amazon Mechanical Turk; PsiTurk; Online Experiments; Crowdsourcing
 \end{quote}
 
 \section{Objectives}
-% This half-day workshop will provide attendants with the basic skills of running customized web-based experiments using Amazon's Mechanical Turk (AMT) marketplace.
+% This half-day workshop will provide attendants with the basic skills of running
+% customized web-based experiments using Amazon's Mechanical Turk (AMT)
+% marketplace.
 
-This half-day workshop will demonstrate how to build custom web-based experiments, targeting participants on Amazon Mechanical Turk (AMT).
+This half-day workshop will demonstrate how to build custom web-based
+experiments, targeting participants on Amazon Mechanical Turk (AMT).
 
-% At the 2011 Conference of the Cognitive Science society, Mason and Suri \citeyear{mason2011use} presented their workshop on using  AMT for online experiments in cognitive science. While already popular in other fields and for commercial purposes, AMT was then still a fairly novel tool  within cognitive psychology. It has since then been gaining popularity among researchers as a method for recruiting and testing participants online. 
-Workshops discussing the AMT marketplace have been offered at previous Cognitive Science Society meetings \cite<e.g.,>{mason2011use}.
-This workshop hopes to compliment those by stepping through a working demo, one that attendees can use to follow along and run on their personal computers.
-Importantly, the demo will illustrate how AMT can be used with rich, externally-hosted experiments, rather than the simple survey templates currently offered on AMT.
+% At the 2011 Conference of the Cognitive Science society, Mason and Suri
+% \citeyear{mason2011use} presented their workshop on using  AMT for online
+% experiments in cognitive science. While already popular in other fields and for
+% commercial purposes, AMT was then still a fairly novel tool  within cognitive
+% psychology. It has since then been gaining popularity among researchers as a
+% method for recruiting and testing participants online. 
+Workshops discussing the AMT marketplace have been offered at previous Cognitive
+Science Society meetings \cite<e.g.,>{mason2011use}.  This workshop hopes to
+compliment those by stepping through a working demo, one that attendees can use
+to follow along and run on their personal computers.  Importantly, the demo will
+illustrate how AMT can be used with rich, externally-hosted experiments, rather
+than the simple survey templates currently offered on AMT.
 
-The workshop will have two parts.
-First, we will outline some of the general advantages and principles of using AMT for behavioral experiments online, including a basic introduction to the AMT website and the data collection process more generally.
-Second, we will show participants how to use the psiTurk platform to run any web-based experiment on Mechanical Turk.
+The workshop will have two parts. First, we will outline some of the general
+advantages and principles of using AMT for behavioral experiments online,
+including a basic introduction to the AMT website and the data collection process
+more generally. Second, we will show participants how to use the PsiTurk
+platform to run any web-based experiment on Mechanical Turk.
 
 
 \section{Outline of the Workshop}
-Throughout the workshop we will use both slides and live demonstrations of how to use AMT and psiTurk for running web experiments. 
+Throughout the workshop we will use both slides and live demonstrations of how to
+use AMT and PsiTurk for running web experiments. 
 
 \subsection{General Introduction to Mechanical Turk}
-We will start by introducing the basic structure behind AMT and demonstrate how to run a simple project.
+We will start by introducing the basic structure behind AMT and demonstrate how
+to run a simple project.
 
-AMT is the largest online service in the US that offers a marketplace for tasks that need to be solved by human rather than machine intelligence.
-Human Intellegence Tasks (\emph{HIT}s) are submitted by \emph{requesters}, such as corporations, researchers, organizations, or individuals in need for human participants.
-They can be completed by \emph{workers} in exchange for a reimbursement that is set by the requester.
-Workers can also be awarded bonuses or have their payment rejected based on how they completed a HIT.
-We will walk attendants through a simple example of how to post a HIT, oversee the data collection, and reimburse participants on the AMT website.
+AMT is the largest online service in the US that offers a marketplace for tasks
+that need to be solved by human rather than machine intelligence. Human
+Intellegence Tasks (HITs) are submitted by \emph{requesters}, such as
+corporations, researchers, organizations, or individuals in need for human
+participants.  They can be completed by \emph{workers} in exchange for a
+reimbursement that is set by the requester.  Workers can also be awarded bonuses
+or have their payment rejected based on how they completed a {HIT}.  We will walk
+attendants through a simple example of how to post a HIT, oversee the data
+collection, and reimburse participants on the AMT website.
 
 
 \subsection{Advantages of online experiments}
-Next, we will cover some of the advantages and pitfalls associated with using AMT for behavioral research.
+Next, we will cover some of the advantages and pitfalls associated with using AMT
+for behavioral research.
 
-For cognitive psychologists the appeal of using AMT lies in running computer experiments that would otherwise be completed in the lab, typically by undergraduate students. 
-The advantages are obvious:
+For cognitive psychologists the appeal of using AMT lies in running computer
+experiments that would otherwise be completed in the lab, typically by
+undergraduate students. Online experiments have several advantages:
 \begin{enumerate}
 \item
-    Data from a large number of participants can be collected  quickly and at low costs.
-    A few hours are typically sufficient for a standard cognition or perception experiment.
+    Data from a large number of participants can be collected  quickly and at low
+    costs.  A few hours are typically sufficient for a standard cognition or
+    perception experiment.
 \item
-    Since the data collection is anonymous, using AMT also minimizes experimenter effects and problems with contaminated subject pools at research departments.
+    Since the data collection is anonymous, using AMT also minimizes experimenter
+    effects and problems with contaminated subject pools at research departments.
 \item 
-    For the same reason, experimental results become more replicable.
-    If researchers decide to share their experiment code, it becomes easy to run the same study again with minimal effort.
+    For the same reason, experimental results become more replicable.  If
+    researchers decide to share their experiment code, it becomes easy to run the
+    same study again with minimal effort.
 \end{enumerate}
 
-Potential disadvantages of the method concern the quality of the data, and the role that the comparatively low reimbursement might play in lowering incentives to engage in a task.
-To address these questions, several authors have used AMT to replicate classic findings in their field.
-Paolacci and colleagues \citeyear{paolacci2010running}, for example, replicated some well-known  cognitive biases from the Judgment and Decision-Making literature using AMT data.
-Germine and colleagues \citeyear{germine2012web}  found no systematic differences in the results of  some widely-used perceptual paradigms using laboratory and online data.
-At NYU's Cognition and Computation lab we have successfully replicated the main findings of multiple classic studies in the concept learning literature [WAS LOOKING TO ALSO INCLUDE CRUMP ET AL PAPER FROM JOHNS PRESENTATION HERE, STILL IN PRESS?].
-We also manipulated the monetary incentives of one of these tasks and found it had little effect on the performance in the task, although it did affect the drop-out rate.
-In addition to these experimental replications, researchers have addressed the objective reliability of AMT data.
-David Rand \citeyear{rand2012promise}, for example, conducted an extensive study into the reliability of AMT workers' demographic data  and verified that self-reported demographic information is highly reliable.
+Potential disadvantages of the method concern the quality of the data, and the
+role that the comparatively low reimbursement might play in lowering incentives
+to engage in a task.  To address these questions, several authors have used AMT
+to replicate classic findings in their field.  Paolacci and colleagues
+\citeyear{paolacci2010running}, for example, replicated some well-known
+cognitive biases from the Judgment and Decision-Making literature using AMT data.
+Germine and colleagues \citeyear{germine2012web}  found no systematic differences
+in the results of  some widely-used perceptual paradigms using laboratory and
+online data.  At NYU's Cognition and Computation lab we have successfully
+replicated the main findings of multiple classic studies in the concept learning
+literature.  \todo{include crump et al paper here} We also manipulated the
+monetary incentives of one of these tasks and found it had little effect on the
+performance in the task, although it did affect the drop-out rate.  In addition
+to these experimental replications, researchers have addressed the objective
+reliability of AMT data.  David Rand \citeyear{rand2012promise}, for example,
+conducted an extensive study into the reliability of AMT workers' demographic
+data  and verified that self-reported demographic information is highly reliable.
 
-In sum, we will illustrate that AMT data has stood up to a range of replicability tests so far.
-Given that some heterogeneity is always to be expected from replicated experiments and keeping in mind that undergraduate subject pools introduce their own sampling biases, these should be encouraging for scientists who are using or planning to use AMT.
-Another advantage of using web-based experiments is that they can just as easily be repeated in the lab, if such cross-validation is desired.
+In sum, we will illustrate that AMT data has stood up to a range of replicability
+tests so far.  Given that some heterogeneity is always to be expected from
+replicated experiments and keeping in mind that undergraduate subject pools
+introduce their own sampling biases, these should be encouraging for scientists
+who are using or planning to use {AMT}.  Another advantage of using web-based
+experiments is that they can just as easily be repeated in the lab, if such
+cross-validation is desired.
 
 
-\subsection{Running AMT experiments using psiTurk}
-Finally, we will demonstrate how researchers can run experiments from their own website using AMT.
+\subsection{Running AMT experiments using PsiTurk}
+Finally, we will demonstrate how researchers can run experiments from their own
+website using AMT.
 
-Mechanical Turk offers some some basic templates for simple online studies that can be built directly on the website.
-However, it can also be used to run any web-based experiment programmed directly by the researcher via the \emph{External Question} type.
-To facilitate this process, John McDonnell and Todd Gureckis from NYUs Cognition and Computation lab have written a Python-based platform that allows users to create  HITs for experiments with minimal effort.
-It provides a ``backend'' framework enabling researchers to plug in their own web-based experiments and create HITs on AMT directly.
-[MAYBE MORE DETAIL HERE? NOT SURE..]
+Mechanical Turk offers some some basic templates for simple online studies that
+can be built directly on the website.  However, it can also be used to run any
+web-based experiment programmed directly by the researcher via the \emph{External
+Question} type.  To facilitate this process, John McDonnell and Todd Gureckis
+from NYUs Cognition and Computation lab have written a Python-based platform that
+allows users to create  HITs for experiments with minimal effort.  It provides a
+back-end framework enabling researchers to plug in their own web-based
+experiments and create HITs on AMT directly.  \todo{Maybe more detail here? not
+sure\ldots}
 
-The project is publicly available on Github for anyone to download and use to implement their own web experiments.
-Over the course of the workshop, we will introduce the platform and show how attendants can run their own experiments on AMT.
-We will do so using a demo experiment coded in JavaScript that will be turned into a HIT.
-This demo will then be available for attendants to easily adapt to their own experimental needs.
-
+The project is publicly available on Github for anyone to download and use to
+implement their own web experiments.  Over the course of the workshop, we will
+introduce the platform and show how attendants can run their own experiments on
+{AMT}. We will do so using a demo experiment coded in JavaScript that will be
+turned into a {HIT}.  This demo will then be available for attendants to easily
+adapt to their own experimental needs.
 
 \section{Audience}
-We expect that this workshop will appeal to cognitive science researchers who are conducting behavioral experiments in a wide number of areas.
-The workshop will be particularly informative for scientists who are unfamiliar with AMT, but are keen to transfer their experiments to the web (e.g., using JavaScript or Flash).
+We expect that this workshop will appeal to cognitive science researchers who are
+conducting behavioral experiments in a wide number of areas.  The workshop will
+be particularly informative for scientists who are unfamiliar with AMT, but are
+keen to transfer their experiments to the web (e.g., using JavaScript or Flash).
 
-The workshop might also be useful for those who are already using AMT but would benefit from a framework like psiTurk to help them run customized web experiments without the need to engage in the backend machinery.
-While perhaps less useful to neuroscientists who require more elaborate experimental techniques, it might still be worthwhile for some to consider AMT as a platform for piloting the behavioral parts of their experiments before taking them to the scanner.
+The workshop might also be useful for those who are already using AMT but would
+benefit from a framework like PsiTurk to help them run customized web experiments
+without the need to engage in the back-end machinery.  While perhaps less useful
+to neuroscientists who require more elaborate experimental techniques, it might
+still be worthwhile for some to consider AMT as a platform for piloting the
+behavioral parts of their experiments before taking them to the scanner.
 
 
 \section{Presenters}
 
-All presenters of the workshop have used AMT and psiTurk extensively to collect data and presented results based on this data at multiple conferences and published in XXX  [YOU PROBABLY KNOW BEST WHAT ALL YOUR AMT CREDENTIALS ARE? HOPEFULLY 'EXTENSIVELY' WILL BE TRUE ABOUT MYSELF BY THEN... ].
-John McDonnell was a main contributor to the psiTurk source code and also conducted previous workshops introducing AMT to other researchers.
-[ANY OTHER COOL STUFF YOU GUYS DID? PARDON MY IGNORANCE HERE...]
+All presenters of the workshop have used AMT and PsiTurk extensively to collect
+data and presented results based on this data at multiple conferences and
+published in XXX  \todo{You probably know best what all your amt credentials are?
+hopefully `extensively' will be true about myself by then\ldots} John McDonnell
+was a main contributor to the PsiTurk source code and also conducted previous
+workshops introducing AMT to other researchers.  \todo{Any other cool stuff}
+
+\section{Presenters}
 
 
 \bibliographystyle{apacite}
